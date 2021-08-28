@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>My family Book</title>
+<link rel="stylesheet" href="project78.css">
+</head>
+<body style="text-align: center;">
+<img src="family.jpg" style="width:280px; height: 400px;" id="family_member_image">
+<h4 id="family_member_name">My family Book</h4>
+<button id="next_button" onclick="update();">Next</button>
+<script>
+var images=[
+"papa.jpg.jpg",
+"mom.png",
+"small brother.jpg",
+"big brother.jpg",    
+    ];
+var names=[
+"My father(Jitendra Singh)",
+"My mother(Shradha Singh)",
+"My brother(Shivansh Singh)",
+"Me(Medhansh Singh)"   
+    ];
+var i=0;
+function update() {
+    document.getElementById("family_member_image").src=images[i];    
+    document.getElementById("family_member_name").innerHTML=names[i];
+    i++;
+    if(i==4){
+        i=0;
+    } 
+}
+</script>
+</body>
+</html>
